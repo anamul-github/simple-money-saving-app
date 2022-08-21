@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-5xl font-bold text-center text-teal-600 mt-10">Money Master</h1>
+
+    <section>
+        <div class="grid grid-cols-2 gap-4 mx-12 mt-12">
+            <div>
+                <img class="h-4/5 w-4/5" src="/images/Pexels Photo by Karolina Grabowska.png" alt="">
+            </div>
+
+            <div class="bg-slate-100 h-4/5 w-4/5">
+                <h1 class="text-2xl font-semibold mb-3">Income</h1>
+                <span class="text-center">Income:</span>
+                <input id="income-input" class="text-center" type="text" placeholder="">
+
+
+                <h1 class="text-2xl font-semibold my-3">Expenses</h1>
+                <div>
+                    <span class="text-center">Food:</span>
+                    <input id="food-input" class="text-center" type="text" placeholder="">
+                </div>
+                <br>
+                <div>
+                    <span class="text-center">Rent:</span>
+                    <input id="rent-input" class="text-center" type="text" placeholder="">
+                </div>
+                <br>
+                <div>
+                    <span class="text-center">Clothes:</span>
+                    <input id="clothes-input" class="text-center" type="text" placeholder="">
+                </div>
+                <button id="btn-calc" class="bg-blue-400 px-5 py-2 mt-3">Calculate</button>
+                <h1 class="text-2xl font-semibold mb-3">Total Expenses: $<span id="total-expenses"></span></h1>
+                <h1 class="text-2xl font-semibold mb-3">Balance: $<span id="balance"></span></h1>
+                <div>
+                    <span class="text-center py-1">Save:</span>
+                    <input class="text-center w-1/6 py-1" type="text" placeholder="20">
+                    <span class="px-2">%</span>
+                    <button id="btn-save" class="bg-blue-400 px-4 py-1">Save</button>
+                </div>
+                <h1 class="text-2xl font-semibold mb-3">Saving Amount: $<span id="saving-amount"></span></h1>
+                <h1 class="text-2xl font-semibold mb-3">Remaining Balance: $<span id="remaining-balance"></span></h1>
+            </div>
+        </div>
+
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
